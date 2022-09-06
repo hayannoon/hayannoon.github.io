@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>My Awesome Site. | hayannoon blog</title>
+<!-- begin _includes/seo.html --><title>hayannoon blog</title>
 <meta name="description" content="A person who blow new wind">
 
 
@@ -19,8 +19,8 @@
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
-<meta property="og:site_name" content="My Awesome Site. | hayannoon blog">
-<meta property="og:title" content="            My Awesome Site.      hayannoon blog      ">
+<meta property="og:site_name" content="hayannoon blog">
+<meta property="og:title" content="hayannoon blog">
 <meta property="og:url" content="http://localhost:4000/">
 
 
@@ -67,7 +67,7 @@
 
 
 
-  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="My Awesome Site. | hayannoon blog Feed">
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="hayannoon blog Feed">
 
 
 <!-- https://t.co/dKP3o1e -->
@@ -109,12 +109,17 @@
       <nav id="site-nav" class="greedy-nav">
         
         <a class="site-title" href="/">
-          My Awesome Site. | hayannoon blog
+          hayannoon blog
           
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
               <a href="https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/">Quick-Start Guide</a>
             </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
         
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">Toggle menu</span>
@@ -185,13 +190,6 @@
 
       
 
-      
-        <li>
-          <a href="mailto:hayannoon95@gmail.com" rel="me" class="u-email">
-            <meta itemprop="email" content="hayannoon95@gmail.com" />
-            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span>
-          </a>
-        </li>
       
 
       
@@ -277,6 +275,17 @@
     </div>
 
     
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
 
     <div id="footer" class="page__footer">
       <footer>
@@ -321,6 +330,10 @@
 
 
 
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
 
 
 
