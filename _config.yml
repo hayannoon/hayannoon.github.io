@@ -21,8 +21,8 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "hayannoon"
 description              : "A person who blow new wind"
-url                      : "https://hayannoon.github.io"
-baseurl                  : # string 
+url                      : "https://hayannoon.github.io/"
+baseurl                  : "" # string 
 repository               : "hayannoon/hayannoon.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/assets/images/wind.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
@@ -105,14 +105,14 @@ analytics:
 # Site Author
 author:
   name             : "hayannoon"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/wind.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "In the beginning was the Word, and the Word was with God, and thd Word was God. John 1:1"
-  location         : "Daejeon, South Korea"
+  location         : "Daejeon, Republic of Korea"
   email            : # "hayannoon95@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "hayannoon95@gmail.com"
+      url: "mailto:hayannoon95@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -132,6 +132,12 @@ author:
 # Site Footer
 footer:
   links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:hayannoon95@gmail.com"  
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/hayannoon"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url:
@@ -186,7 +192,7 @@ exclude:
 keep_files:
   - .git
   - .svn
-encoding: "utf-8"
+encoding: "UTF-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 
@@ -218,7 +224,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 5 #5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
@@ -291,3 +297,5 @@ defaults:
       comments: true
       share: true
       related: true
+
+ 
