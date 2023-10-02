@@ -5,6 +5,9 @@ var store = [{
         "url": "/edge%20case/edge-case-nested-and-mixed-lists/",
         "teaser": null
       },{
+    "title": "About",
+    "excerpt":"This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at jekyllrb.com You can find the source code for Minima at GitHub: jekyll / minima You can find the source code for Jekyll at GitHub: jekyll...","url": "http://localhost:4000/about/"
+  },{
     "title": null,
     "excerpt":"","url": "http://localhost:4000/"
   },{
@@ -16,6 +19,9 @@ var store = [{
   },{
     "title": null,
     "excerpt":"var store = [ {%- for c in site.collections -%} {%- if forloop.last -%} {%- assign l = true -%} {%- endif -%} {%- assign docs = c.docs | where_exp:'doc','doc.search != false' -%} {%- for doc in docs -%} {%- if doc.header.teaser -%} {%- capture teaser -%}{{ doc.header.teaser }}{%- endcapture...","url": "http://localhost:4000/assets/js/lunr/lunr-store.js"
+  },{
+    "title": null,
+    "excerpt":"{% for post in site.posts %} {{ site.url }}{{ post.url }} {% if post.lastmod == null %} {{ post.date | date_to_xmlschema }} {% else %} {{ post.lastmod | date_to_xmlschema }} {% endif %} {% if post.sitemap.changefreq == null %} weekly {% else %} {{ post.sitemap.changefreq }} {% endif %} {%...","url": "http://localhost:4000/sitemap.xml"
   },{
     "title": null,
     "excerpt":"{% if page.xsl %}{% endif %}Jekyll{{ site.time | date_to_xmlschema }}{{ page.url | absolute_url | xml_escape }}{% assign title = site.title | default: site.name %}{% if page.collection != \"posts\" %}{% assign collection = page.collection | capitalize %}{% assign title = title | append: \" | \" | append: collection %}{% endif...","url": "http://localhost:4000/feed.xml"
